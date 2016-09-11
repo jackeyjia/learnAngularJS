@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+    <title>AngularJS with Directive</title>
+</head>
+<body data-ng-init="names=['John', 'Smith', 'Leo', 'Jackson']">
+    Name:
+    <br/>
+    <input type="text" data-ng-model="name"/> {{ name }}
+    <br/>
+    <ul>
+        <li data-ng-repeat="personName in names">{{ personName }}</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</body>
+</html>
