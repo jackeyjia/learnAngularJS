@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Primer</title>
+
+    <script>
+        function trippler(numberToTriple){
+            return 3 * numberToTriple;
+        }
+
+        console.log(trippler(150));
+        console.log(trippler(300));
+
+        var color = "red";
+        console.log("this color is " + color);
+
+        var valueOne = 3;
+        var valueTwo = "3";
+
+        if (valueOne == valueTwo) {
+            console.log("Value one and value two are equal on value");
+        }
+
+        if (valueOne === valueTwo) {
+            console.log(" value one and value two has same value and type");
+        }
+
+
+        var myFunctionReference = function(){
+            console.log('callbacks part 1');
+        }
+
+        myFunctionReference();
+        var  y = myFunctionReference; // using the call back 
+        myFunctionReference();
+        y();
+    </script>
+</head>
+<body>
+    <!-- <script src="scripts/myScripts.js"></script> -->
+</body>
+</html>
