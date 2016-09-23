@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Listing 2-3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+</head>
+<body>
+    <label>City: </label><input ng-model="city" type="text" /></label>
+    <p>You entered: {{city}}</p>
+
+    <p ng-show="true"> section 1, can you see me?</p>
+    <p ng-show="false"> section 2, can you see me?</p>
+    <p ng-show="1 == 1"> section 3, can you see me?</p>
+    <p ng-show="1 == 2"> section 4, can you see me?</p>
+
+
+    <button ng-click= "count = count + 1" ng-init="count = 0">
+        Increment
+    </button>
+    <p>count: {{count}}</p>
+</body>
+</html>
