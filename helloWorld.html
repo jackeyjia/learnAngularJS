@@ -3,10 +3,42 @@
 <html ng-app>
 <head>
     <title>Hello World</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> <!-- google ANGULARJS CDN -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  google ANGULARJS CDN -->
+    <script src="angular.min.js"></script>
 </head>
 <body>
     <p>Hello {{'wor' +'ld'}}</p>
     <p>Hello {{'wor' +'ld'}}</p>
+    <span ng-bind="2+2"></span>
+    {{2+2}}
+    <p ng-cloak>{{ 2 + 2 }}</p>
+
+    <p ng-hide="correctAnswer">That answer is correct!</p>
+
+    <h2>My Favourite Cities</h2>
+    
+    <div ng-repeat="city in ['Liverpool','Perth','Sydney','Dublin','Paris']">
+        {{$index}}. {{city}}
+        {{$first ? '(This is the first row)' : ''}} {{$last ? '(This is the last row)' : ''}}
+    </div>
+
+
+    <select name="favorite-food" id="favorite-food">
+        <option>Eggs</option>
+        <option>Fish</option>
+        <option>Bread</option>
+    </select><br/>
+
+
+
+    <select name="favorite-food" id="favorite-food" multiple >
+        <option>Eggs</option>
+        <option>Fish</option>
+        <option>Bread</option>
+    </select>
+
+    <label for="first-name">Enter Your First Name</label><br/>
+    <input type="text" name="first-name" id="first-name" size="20"/>
+
 </body>
 </html>

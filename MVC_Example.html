@@ -2,9 +2,9 @@
 <html ng-app>
 <head>
     <title>Simple MVC Exampele</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"/>
 
-    <script >
+    <script>
         function MyFirstCtrl($scope) {
             var employee = ['Catherine Grant', 'Monica Grant','Christopher Grant', 'Jennifer Grant'];
             $scope.ourEmp = employee;
@@ -15,6 +15,9 @@
 <body ng-controller='MyFirstCtrl'>
 
     <h2>Number of Employee: {{ourEmp.length}}</h2>
+
+    <p>Hello {{'wor' +'ld'}}</p>
+    <p>Hello {{'wor' +'ld'}}</p>
 
 </body>
 </html>
