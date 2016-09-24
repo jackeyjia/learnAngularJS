@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Data Filter Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"/>
+
+    <script>
+        function myFilterCtrl($scope) {
+            
+            var exmData = {
+                firstName: "JACKEY",
+                lastName: "JIA",
+                dateJoined: new Date(2010, 2, 23),
+                consumption: 123.659855,
+                plan: "super-basic-plan"
+
+            }
+
+            $scope.data = exmData;
+        }
+    </script>
+
+</head>
+<body ng-app ng-controller="myFilterCtrl">
+    <p>
+    <!-- Unfiltered data -->
+    <strong>First Name</strong>: {{data.firstName}}<br/>
+    <strong>Last Name:</strong> {{data.surname}}
+    </p>
+
+    <p>
+    <!-- Filtered data -->
+    <strong>First Name</strong>: {{data.firstName | lowercase}}
+    <br/>
+    <strong>Last Name:</strong> {{data.surname | lowercase }}
+    </p>
+</body>
+</html>
