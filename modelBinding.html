@@ -5,17 +5,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </head>
 <body>
-    <div ng-app="myApp">
-    <div ng-controller="MyController">
+    <div ng-app="myapp" ng-controller="MyController">
         <form name="theForm">
-            <input type="text" name="firstName" ng-model="person.firstName"/><br/> <input type="text" name="firstName" ng-model="person.address.street"/>
+            <div>
+                <input type="text" name="firstName" ng-model="firstName"> <br/>
+                <input type="button" value="Show first name" ng-click="showFirstName()"/>
+            </div>
         </form>
-
-        <p>
-            First name is:  {{person.firstName}} <br/>
-            Street name is: {{person.address.street}}
-        </p>
-    </div>    
     </div>
 </body>
 </html>
